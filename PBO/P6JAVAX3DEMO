@@ -1,0 +1,33 @@
+/*
+ * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
+ * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Class.java to edit this template
+ */
+
+/**
+ *
+ * @author iks
+ */
+import javax.swing.*;
+import java.awt.*;
+
+public class demojavax extends JFrame {
+    private JPanel jp = new JPanel();
+    private JTextField jt = new JTextField();
+    private JLabel jl = new JLabel("contoh label");
+
+    public demojavax() {
+        setLayout(null); // Mengatur layout menjadi null
+        add(jl);
+        add(jt);
+        add(jp);
+        jl.setBounds(15, 20, 80, 25);
+        jt.setBounds(120, 20, 80, 25);
+    }
+
+    public static void main(String[] args) {
+        demojavax demo2 = new demojavax();
+        demo2.setTitle("Form dengan Label dan TextField");
+        demo2.setSize(300, 300);
+        demo2.setVisible(true);
+    }
+}
